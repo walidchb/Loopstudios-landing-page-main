@@ -1,0 +1,275 @@
+/* Colors :
+
+White: hsl(0, 0%, 100%)
+Black: hsl(0, 0%, 0%)
+Dark Gray: hsl(0, 0%, 55%)
+Very Dark Gray: hsl(0, 0%, 41%)
+
+Font :
+- Size : 15px
+- Family1: [Alata](https://fonts.google.com/specimen/Alata)
+- Weight1: 400
+- Family2: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+- Weight2: 300  */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+
+#header{
+    color: white;
+    background-image: url("./images/image-hero.jpg");
+    height: 650px;
+}
+
+#header p {
+    width: 8em;
+    margin: 2em 12em 0em 1em;
+    padding: 0.5em 0.5em 0.3em 0.5em;
+    font-size: 4em;
+    border: 3px white solid;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+nav {
+    font-family: 'Alata', sans-serif;
+    padding: 0em 9em;
+    align-items: center;
+    height: 6em;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* nav  */
+ul {
+    display: flex;
+}
+
+/* nav ul */
+ li {
+     font-weight: bold;
+    margin: 0em 1em 0em 0em;
+}
+
+#SecondDIV {
+    display: flex;
+    flex-direction: row;
+    margin: 9em 0em 9em 7em;
+}
+
+#SecondDIV div{
+    background-color: white;
+    margin: 12em 0em 0em -10em;
+    padding: 5em 11em 0em 6em;
+}
+#SecondDIV div h2 {
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+
+#line {
+    margin-bottom: 3em;
+    padding: 0em 7em;
+    display: flex;
+    justify-content: space-between;
+}
+#line h3 {
+    font-size: 2em;
+}
+
+.BTN {
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 2px black solid;
+    color: black;
+    background-color: white;
+    padding: 0em 2em 0em 2em;
+}
+
+#table {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 0em 4em 0em 7em;
+}
+
+#table div {
+    margin: 1em 0em;
+    position: relative;
+}
+
+#table div h3  {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    left: 8%;
+    top: 75%;
+}
+
+#SEEALL_mobile {
+    display: none;
+}
+
+footer {
+    /* height: 10em; */
+    color: white;
+    background-color: black;
+    margin-top: 5em;
+    padding: 1em 0em;
+}
+
+.rows {
+    display: flex;
+    justify-content:space-between ;
+    padding: 0.5em 7em;
+    align-items: center;
+}
+
+.rows div a {
+    margin-left: 1em;
+}
+
+#contact_web {
+    display: inline;
+}
+
+#contact_mobile {
+    display:none;
+}
+
+
+@media (max-width:425px) {
+    
+    
+    #header {
+        box-sizing: border-box;
+        height: 30em;
+    }
+
+    nav  {
+        padding: 0px;
+    }
+
+    nav h2 {
+        padding: 0em 0em 0em 1em ;
+    }
+    nav ul {
+        display: none;
+    }
+    
+    #header p {
+        padding: 0.5em 0em 0.5em 0.5em ;
+        font-size: 2.5em;
+        margin: 2em 0.5em 0em 0.4em;
+    }
+
+    #SecondDIV {
+        display: flex;
+        flex-direction: column;
+        margin: 4em 0em 0em 0em;
+        align-items: center;
+        text-align: center;
+    }
+    
+
+    #SecondDIV img {
+        width: 80%;
+        margin-bottom: 3em;
+    }
+
+    #SecondDIV div{
+        width:80% ;
+        margin: 0em 0em 3em 0em;
+        padding: 0em 0em 0em 0em;
+    }
+    #SecondDIV div h2 {
+        margin-bottom: 1em;
+        font-size: 2em;
+    }
+
+    #SEEALL_web {
+        display: none;
+
+    }
+
+    #contact_web {
+        display: none;
+    }
+
+    #contact_mobile {
+        display:inline;
+        margin-bottom: 1em;
+    }
+
+
+    #line {
+        margin-bottom: 3em;
+        padding: 0em 2em 0em 4.8em;
+        text-align: center;
+    }
+      
+
+    #table {
+        padding: 0em 2em ;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #table div img {
+        /* clip-path: polygon(0 0, 100% 0, 100% 21%, 0 21%); */
+       height: 6em;
+       width: 100%;
+       object-fit: cover;
+    }
+    
+    #table div {
+        height:fit-content;
+        margin: 1em 0em;
+        position: relative;
+    }
+
+    
+    #table div h3  {
+        color: white;
+        font-size: 1.5em;
+        position: absolute;
+        left: 5%;
+        top: 35%;
+    }
+
+    #SEEALL_mobile {
+        display: inline;
+        margin: 1em 0em 0em 11em;
+        padding: 1em 2em;
+    }
+
+    footer {
+        padding-top: 2em;
+        text-align: center;
+    }
+
+    .rows {
+        display: flex;
+        flex-direction: column;
+        padding: 0em 0em;
+        align-items: center;
+    }
+
+    #UL_mobile  {
+        margin: 1em 0em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #UL_mobile li {
+        margin: 0.3em 0em;
+    }
+
+
+}
